@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Код татах
+        uses: actions/checkout@v4
+
+      - name: Bun суулгах
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Хамааралтай сангууд суулгах
+        run: bun install
+
+      - name: Project build хийх
+        run: bun run build
