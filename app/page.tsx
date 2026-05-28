@@ -13,12 +13,12 @@
 // }
 
 export default function Home() {
-  const user: any = null;
+  const user = { name: "Tok" };
 
   return (
     <main className="min-h-screen flex items-center justify-center">
       <div>
-        <h1> Bug test</h1>
+        <h1> Fixed</h1>
 
         <p>{user.name}</p>
       </div>
