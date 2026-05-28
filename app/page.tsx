@@ -12,30 +12,30 @@
 //   );
 // }
 
-export default function Home() {
-  const user: any = null;
-
-  return (
-    <main className="min-h-screen flex items-center justify-center">
-      <div>
-        <h1> Bug test</h1>
-
-        <p>{user.name}</p>
-      </div>
-    </main>
-  );
-}
-
 // export default function Home() {
-//   const user= { name: "Tok" };
+//   const user: any = null;
 
 //   return (
 //     <main className="min-h-screen flex items-center justify-center">
 //       <div>
-//         <h1> Fixed test</h1>
+//         <h1> Bug test</h1>
 
 //         <p>{user.name}</p>
 //       </div>
 //     </main>
 //   );
 // }
+
+export default function Home() {
+  const user= { name: "Tok" };
+
+  return (
+    <main className="min-h-screen flex items-center justify-center">
+      <div>
+        <h1> Fixed test</h1>
+
+        <p>{user.name}</p>
+      </div>
+    </main>
+  );
+}
